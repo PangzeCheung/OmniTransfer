@@ -1,13 +1,17 @@
 <div align="center">
 <h1> OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer </h1>
 
-<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv%20paper-2509.08519-b31b1b.svg"></a>
+<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv%20paper-XXXX.XXXXX-b31b1b.svg"></a>
 <a href="https://pangzecheung.github.io/OmniTransfer/"><img src="https://img.shields.io/badge/Project_page-More_visualizations-green"></a>
 
 [Pengze Zhang](https://pangzecheung.github.io/Homepage/), [Yanze Wu](https://tothebeginning.github.io/)<sup> * </sup>, [Mengtian Li](https://scholar.google.com/citations?user=y8OBcb8AAAAJ), [Xu Bai](https://openreview.net/profile?id=~Baixu1), [Songtao Zhao](https://openreview.net/profile?id=~Songtao_Zhao1)<sup>&dagger; </sup>, <br>[Fulong Ye](https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en), [Chong Mou](https://scholar.google.com/citations?user=SYQoDk0AAAAJ&hl=zh-CN), [Xinghui Li](https://crayon-shinchan.github.io/xinghui99.github.io/), [Zhuowei Chen](https://scholar.google.com/citations?user=ow1jGJkAAAAJ), [Qian He](https://scholar.google.com/citations?user=9rWWCgUAAAAJ), [Mingyuan Gao](https://openreview.net/profile?id=~Mingyuan_Gao2)<br>
 <sup> * </sup>Corresponding author, <sup> &dagger; </sup>Project leader 
 
 Intelligent Creation Lab, ByteDance
+
+<div align=center>
+<img width="1148" alt="framework" src="https://github.com/PangzeCheung/SingDiffusion/assets/37894893/76fc771d-ec33-4fb5-ab03-ba5265f31a3b">
+</div>
 
 </div>
 
@@ -17,14 +21,6 @@ Videos convey richer information than images or text, capturing both spatial and
 <!-- <p align="center">
 <img src="assets/teaser.png" width=95%>
 <p> -->
-
-<p align="center">
-  <video width="80%" controls autoplay muted loop playsinline preload="auto">
-    <source src="https://github.com/PangzeCheung/OmniTransfer/raw/main/assets/teaser.mp4" type="video/mp4">
-  </video>
-  <br>
-  <em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
-</p>
 
 
 ## 🔥 Latest News
