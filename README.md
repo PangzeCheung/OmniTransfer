@@ -23,13 +23,6 @@ Videos convey richer information than images or text, capturing both spatial and
 <img src="assets/teaser.png" width=95%>
 <p> -->
 
-<p align="center">
-  <video width="80%" controls autoplay muted loop playsinline preload="auto">
-    <source src="https://github.com/PangzeCheung/OmniTransfer/raw/main/assets/teaser.mp4" type="video/mp4">
-  </video>
-  <br>
-  <em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
-</p>
 
 
 ## 🔥 Latest News
