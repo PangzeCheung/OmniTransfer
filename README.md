@@ -4,7 +4,7 @@
 <a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv%20paper-2509.08519-b31b1b.svg"></a>
 <a href="https://pangzecheung.github.io/OmniTransfer/"><img src="https://img.shields.io/badge/Project_page-More_visualizations-green"></a>
 
-[Pengze Zhang](https://pangzecheung.github.io/Homepage/), [Yanze Wu](https://tothebeginning.github.io/)<sup> * </sup>, [Mengtian Li](https://scholar.google.com/citations?user=y8OBcb8AAAAJ), [Xu Bai](https://openreview.net/profile?id=~Baixu1), [Pengze Zhang](https://openreview.net/profile?id=%7EPengze_Zhang1), <br>[Songtao Zhao](https://openreview.net/profile?id=~Songtao_Zhao1)<sup>&dagger</sup>, <br>[Fulong Ye](https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en), [Chong Mou](https://scholar.google.com/citations?user=SYQoDk0AAAAJ&hl=zh-CN), [Xinghui Li](https://crayon-shinchan.github.io/xinghui99.github.io/), [Zhuowei Chen](https://scholar.google.com/citations?user=ow1jGJkAAAAJ), [Qian He](https://scholar.google.com/citations?user=9rWWCgUAAAAJ), [Mingyuan Gao](https://openreview.net/profile?id=~Mingyuan_Gao2)<br>
+[Pengze Zhang](https://pangzecheung.github.io/Homepage/), [Yanze Wu](https://tothebeginning.github.io/)<sup> * </sup>, [Mengtian Li](https://scholar.google.com/citations?user=y8OBcb8AAAAJ), [Xu Bai](https://openreview.net/profile?id=~Baixu1), [Pengze Zhang](https://openreview.net/profile?id=%7EPengze_Zhang1), <br>[Songtao Zhao](https://openreview.net/profile?id=~Songtao_Zhao1)<sup>&dagger; </sup>, <br>[Fulong Ye](https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en), [Chong Mou](https://scholar.google.com/citations?user=SYQoDk0AAAAJ&hl=zh-CN), [Xinghui Li](https://crayon-shinchan.github.io/xinghui99.github.io/), [Zhuowei Chen](https://scholar.google.com/citations?user=ow1jGJkAAAAJ), [Qian He](https://scholar.google.com/citations?user=9rWWCgUAAAAJ), [Mingyuan Gao](https://openreview.net/profile?id=~Mingyuan_Gao2)<br>
 <sup> * </sup>Corresponding author, <sup> &dagger; </sup>Project leader 
 
 Intelligent Creation Lab, ByteDance
@@ -19,12 +19,11 @@ Videos convey richer information than images or text, capturing both spatial and
 <p> -->
 
 <p align="center">
-  <video width="80%" controls autoplay muted loop playsinline>
+  <video width="80%" controls autoplay muted loop playsinline preload="auto">
     <source src="assets/teaser.mp4" type="video/mp4">
   </video>
   <br>
-  <em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task.
-combinations.</em>
+  <em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
 </p>
 
 
