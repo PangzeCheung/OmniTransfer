@@ -9,10 +9,11 @@
 
 Intelligent Creation Lab, ByteDance
 
-<div align=center>
-<img width="1148" alt="framework" src="https://github.com/PangzeCheung/SingDiffusion/assets/37894893/76fc771d-ec33-4fb5-ab03-ba5265f31a3b">
 </div>
-
+<div align=center>
+<img width="1148" alt="framework" src="https://github.com/PangzeCheung/OmniTransfer/blob/main/assets/teaser.jpg">
+<br>
+<em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
 </div>
 
 ## 📃 Abstract
@@ -21,6 +22,14 @@ Videos convey richer information than images or text, capturing both spatial and
 <!-- <p align="center">
 <img src="assets/teaser.png" width=95%>
 <p> -->
+
+<p align="center">
+  <video width="80%" controls autoplay muted loop playsinline preload="auto">
+    <source src="https://github.com/PangzeCheung/OmniTransfer/raw/main/assets/teaser.mp4" type="video/mp4">
+  </video>
+  <br>
+  <em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
+</p>
 
 
 ## 🔥 Latest News
