@@ -56,7 +56,7 @@ url={https://arxiv.org/abs/XXXX.XXXX},
 ```
 
 ## ❤️ Acknowledgement
-We would like to thank Junjie Luo, Qi Chen, Qi Peng, Qichao Sun and Wanquan Feng for their insightful discussions and valuable data contributions.
+We would like to thank Junjie Luo, Qi Chen, Qipeng Tu, Qichao Sun and Wanquan Feng for their insightful discussions and valuable data contributions.
 
 ## 📧 Contact
 If you have any comments or questions regarding this open-source project, please open a new issue or contact us.
