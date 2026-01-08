@@ -675,6 +675,51 @@
             border-radius: 8px; /* 圆角，和 prompt 风格统一 */
             backdrop-filter: blur(5px); /* 毛玻璃效果，和 prompt 一致 */
         }
+
+
+        .ref-overlay-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 25%;
+            z-index: 20;
+            border-radius: 8px;
+            overflow: hidden;
+            
+            /* 核心修改：初始状态透明度 */
+            opacity: 0.8;              /* 透明度设为 0.6 (1.0 是全显) */
+            transition: opacity 0.3s ease, transform 0.3s ease; /* 增加平滑过渡 */
+            
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* 鼠标移动上去时恢复亮度，并稍微放大提示用户 */
+        .ref-overlay-container:hover {
+            opacity: 0.95;
+            transform: scale(1.02);   /* 稍微放大一点点 */
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* 参考图本身 */
+        .ref-overlay-img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            /* 如果背景是黑色，可以使用 overlay 混合模式让它更融合 */
+            /* mix-blend-mode: lighten; */ 
+        }
+
+        /* 标签也调淡一点 */
+        .overlay-label {
+            background: rgba(0, 0, 0, 0.4); /* 背景更透明 */
+            color: rgba(255, 255, 255, 0.8); /* 文字也调淡一点 */
+            font-size: 9px;
+            text-align: center;
+            padding: 2px 0;
+            backdrop-filter: blur(2px);
+        }
+
     </style>
 </head>
 <body>
@@ -764,17 +809,24 @@
             Effect Video Transfer 
         </div>
         <div class="description">
-            <strong>Zero-Shot VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency. </strong>
+            <strong>Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency. </strong>
         </div>
 
         <div class="flex flex-dynamic">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Effect/ref1.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Effect/ref1.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Effect/ref1.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -786,12 +838,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Effect/ref2.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Effect/ref2.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Effect/ref2.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -803,12 +862,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Effect/ref3.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Effect/ref3.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Effect/ref3.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -820,12 +886,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Effect/ref4.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Effect/ref4.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Effect/ref4.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -837,12 +910,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Effect/ref5.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Effect/ref5.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Effect/ref5.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -854,12 +934,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Effect/ref6.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Effect/ref6.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Effect/ref6.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -885,12 +972,19 @@
 
         <div class="flex flex-dynamic">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Motion/ref1.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Motion/ref1.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Motion/ref1.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -902,12 +996,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Motion/ref2.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Motion/ref2.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Motion/ref2.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -919,12 +1020,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Motion/ref3.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Motion/ref3.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Motion/ref3.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -936,12 +1044,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Motion/ref4.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Motion/ref4.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Motion/ref4.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -953,12 +1068,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Motion/ref5.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Motion/ref5.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Motion/ref5.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -970,12 +1092,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Motion/ref6.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Motion/ref6.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Motion/ref6.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1000,12 +1129,19 @@
 
         <div class="flex flex-dynamic">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Camera/ref1.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Camera/ref1.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Camera/ref1.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1017,12 +1153,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Camera/ref7.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Camera/ref7.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Camera/ref7.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1034,12 +1177,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Camera/ref2.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Camera/ref2.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Camera/ref2.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1051,12 +1201,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Camera/ref6.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Camera/ref6.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Camera/ref6.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1068,12 +1225,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Camera/ref4.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Camera/ref4.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Camera/ref4.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1085,12 +1249,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Camera/ref5.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Camera/ref5.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Camera/ref5.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1116,7 +1287,7 @@
 
         <div class="flex flex-dynamic">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1136,7 +1307,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1156,7 +1327,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1176,7 +1347,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1196,7 +1367,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1216,7 +1387,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1250,7 +1421,7 @@
 
         <div class="flex flex-dynamic">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1270,7 +1441,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1290,7 +1461,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1310,7 +1481,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1330,7 +1501,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1350,7 +1521,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1383,12 +1554,19 @@
 
         <div class="flex flex-dynamic">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/XTransfer/ref1.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/XTransfer/ref1.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/XTransfer/ref1.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1400,12 +1578,19 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference</div>
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/XTransfer/ref2.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
                 </div>
-                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/XTransfer/ref2.mp4"></video>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/XTransfer/ref2.mp4">
+                </video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="generation-badge">OmniTransfer</div>
@@ -1419,7 +1604,7 @@
         </div>
         <div class="flex flex-dynamic flex-3cols">
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference Style</div>
+                <div class="generation-badge">Reference Video (Style)</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1427,7 +1612,7 @@
                 <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/XTransfer/ref3-2.mp4"></video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference ID</div>
+                <div class="generation-badge">Reference Video (ID)</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1447,7 +1632,7 @@
             </div>
 
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference ID</div>
+                <div class="generation-badge">Reference Video (ID)</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1455,7 +1640,7 @@
                 <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/XTransfer/ref4-1.mp4"></video>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
-                <div class="generation-badge">Reference Effect</div>
+                <div class="generation-badge">Reference Video (Effect)</div>
                 <div class="loading-placeholder">
                     <div class="loading-text">Loading...</div>
                     <div class="loading-icon">&#9749</div>
@@ -1469,6 +1654,164 @@
                     <div class="loading-icon">&#9749</div>
                 </div>
                 <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/XTransfer/result4.mp4"></video>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="video">
+        <div class="title" style="font-family: 'Alegreya'; font-size: 1.6em;">
+            OmniTransfer with Seedance 1.0
+        </div>
+        <div class="description">
+            <strong>OmniTransfer now supports Seedance 1.0, enabling the delivery of more intricate and high-impact visual effects.</strong>
+        </div>
+
+        <div class="flex flex-dynamic">
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Seedance/ref1.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Seedance/ref1.mp4">
+                </video>
+            </div>
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="generation-badge">OmniTransfer</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Seedance/result1.mp4"></video>
+            </div>
+
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Seedance/ref2.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Seedance/ref2.mp4">
+                </video>
+            </div>
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="generation-badge">OmniTransfer</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Seedance/result2.mp4"></video>
+            </div>
+
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Seedance/ref3.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Seedance/ref3.mp4">
+                </video>
+            </div>
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="generation-badge">OmniTransfer</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Seedance/result3.mp4"></video>
+            </div>
+
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Seedance/ref4.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Seedance/ref4.mp4">
+                </video>
+            </div>
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="generation-badge">OmniTransfer</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Seedance/result4.mp4"></video>
+            </div>
+
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Seedance/ref5.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Seedance/ref5.mp4">
+                </video>
+            </div>
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="generation-badge">OmniTransfer</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Seedance/result5.mp4"></video>
+            </div>
+
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="ref-overlay-container">
+                    <img src="./assets/videos/Seedance/ref6.jpg" class="ref-overlay-img">
+                    <div class="overlay-label">Reference Image</div>
+                </div>
+                <div class="generation-badge">Reference Video</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop 
+                       onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" 
+                       data-src="./assets/videos/Seedance/ref6.mp4">
+                </video>
+            </div>
+            <div class="prompt-wrap full-screen-wrap" style="position: relative;">
+                <div class="generation-badge">OmniTransfer</div>
+                <div class="loading-placeholder">
+                    <div class="loading-text">Loading...</div>
+                    <div class="loading-icon">&#9749</div>
+                </div>
+                <video class="lazy-video" playsinline muted loop onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';" data-src="./assets/videos/Seedance/result6.mp4"></video>
             </div>
 
         </div>
