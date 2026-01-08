@@ -33,10 +33,6 @@ Videos convey richer information than images or text, capturing both spatial and
 <!-- and [Technique Report](https://arxiv.org)   -->
 
 
-## 📑 Todo List
-- [ ] Release Paper
-
-
 ## ⭐ Citation
 
 If OmniTransfer is helpful, please help to ⭐ the repo.
