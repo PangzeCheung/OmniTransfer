@@ -35,7 +35,6 @@ Videos convey richer information than images or text, capturing both spatial and
 
 ## 📑 Todo List
 - [ ] Release Paper
-- [ ] Inference Codes
 
 
 ## ⭐ Citation
