@@ -38,28 +38,24 @@ Videos convey richer information than images or text, capturing both spatial and
 ### Effect Video Transfer
 **Zero-Shot Prompt-Free VFX Mastery:** Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency.
 <div align=center>
-<br>
 <img width="1148" alt="framework" src="./assets/Effect.GIF">
 </div>
 
 ### Motion Video Transfer
 **Pose-Free Animation:** Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.
 <div align=center>
-<br>
 <img width="1148" alt="framework" src="./assets/Motion.GIF">
 </div>
 
 ### Camera Video Transfer
 **Trajectory-Free Camera Control:** Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
 <div align=center>
-<br>
 <img width="1148" alt="framework" src="./assets/Camera.GIF">
 </div>
 
 ### ID Video Transfer
 **Dynamic Identity Anchoring:** Synthesize consistent personas by distilling cross-temporal and multi-angle ID cues from reference videos.
 <div align=center>
-<br>
 <img width="1148" alt="framework" src="./assets/ID.GIF">
 </div>
 
@@ -67,7 +63,6 @@ Videos convey richer information than images or text, capturing both spatial and
 **Beyond Observed Boundaries:** OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
 </div>
 <div align=center>
-<br>
 <img width="1148" alt="framework" src="./assets/X.GIF">
 </div>
 
@@ -75,7 +70,6 @@ Videos convey richer information than images or text, capturing both spatial and
 **OmniTransfer** now supports **Seedance 1.0**, enabling the delivery of more intricate and high-impact visual effects.
 </div>
 <div align=center>
-<br>
 <img width="1148" alt="framework" src="./assets/Seedance.GIF">
 </div>
 
