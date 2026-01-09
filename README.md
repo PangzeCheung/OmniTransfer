@@ -40,41 +40,45 @@ Videos convey richer information than images or text, capturing both spatial and
 <div align=center>
 <img width="1148" alt="framework" src="./assets/Effect.GIF">
 </div>
+<br>
 
 ### Motion Video Transfer
 **Pose-Free Animation:** Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.
 <div align=center>
 <img width="1148" alt="framework" src="./assets/Motion.GIF">
 </div>
+<br>
 
 ### Camera Video Transfer
 **Trajectory-Free Camera Control:** Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
 <div align=center>
 <img width="1148" alt="framework" src="./assets/Camera.GIF">
 </div>
+<br>
 
 ### ID Video Transfer
 **Dynamic Identity Anchoring:** Synthesize consistent personas by distilling cross-temporal and multi-angle ID cues from reference videos.
 <div align=center>
 <img width="1148" alt="framework" src="./assets/ID.GIF">
 </div>
+<br>
 
 ### Style Video Transfer
-**Temporal-Style Distillation:** Generate consistent stylized videos by inheriting cross-frame aesthetic cues from reference clips..
+**Temporal-Style Distillation:** Generate consistent stylized videos by inheriting cross-frame aesthetic cues from reference clips.
 <div align=center>
 <img width="1148" alt="framework" src="./assets/Style.GIF">
 </div>
+<br>
 
 ### X Transfer
 **Beyond Observed Boundaries:** OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
-</div>
 <div align=center>
 <img width="1148" alt="framework" src="./assets/X.GIF">
 </div>
+<br>
 
 ### OmniTransfer with Seedance 1.0
-**OmniTransfer** now supports **Seedance 1.0**, enabling the delivery of more intricate and high-impact visual effects.
-</div>
+**OmniTransfer** supports **Seedance 1.0**, enabling the delivery of more intricate and high-impact visual effects.
 <div align=center>
 <img width="1148" alt="framework" src="./assets/Seedance.GIF">
 </div>
