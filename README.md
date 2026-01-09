@@ -34,8 +34,8 @@ Videos convey richer information than images or text, capturing both spatial and
 
 ## 🎬 Show Case
 
+
 ### Effect Video Transfer
-</div>
 **Zero-Shot Prompt-Free VFX Mastery:** Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency.
 <div align=center>
 <br>
@@ -43,23 +43,20 @@ Videos convey richer information than images or text, capturing both spatial and
 </div>
 
 ### Motion Video Transfer
-</div>
-**Pose-Free Animation:** Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.consistency.
+**Pose-Free Animation:** Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Motion.GIF">
 </div>
 
 ### Camera Video Transfer
-</div>
-**Trajectory-Free Camera Control**: Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
+**Trajectory-Free Camera Control:** Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Camera.GIF">
 </div>
 
 ### ID Video Transfer
-</div>
 **Dynamic Identity Anchoring:** Synthesize consistent personas by distilling cross-temporal and multi-angle ID cues from reference videos.
 <div align=center>
 <br>
@@ -67,16 +64,16 @@ Videos convey richer information than images or text, capturing both spatial and
 </div>
 
 ### X Transfer
-</div>
 **Beyond Observed Boundaries:** OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
+</div>
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/X.GIF">
 </div>
 
 ### OmniTransfer with Seedance 1.0
-</div>
 **OmniTransfer** now supports **Seedance 1.0**, enabling the delivery of more intricate and high-impact visual effects.
+</div>
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Seedance.GIF">
