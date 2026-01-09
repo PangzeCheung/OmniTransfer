@@ -13,7 +13,7 @@ Intelligent Creation Lab, ByteDance
 <div align=center>
 <img width="1148" alt="framework" src="./assets/teaser.GIF">
 <br>
-<em>OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
+<em>Built upon Wan 2.1, OmniTransfer seamlessly unifies spatial appearance (ID and style) and temporal video transfer tasks (effect, motion and camera movement) within a single framework, and exhibits strong generalization across unseen task combinations.</em>
 </div>
 
 
@@ -36,7 +36,7 @@ Videos convey richer information than images or text, capturing both spatial and
 
 ### Effect Video Transfer
 </div>
-Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal. consistency.
+Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Effect.GIF">
@@ -50,6 +50,37 @@ Pose-Free Animation: Driven static images by directly injecting fluid, complex m
 <img width="1148" alt="framework" src="./assets/Motion.GIF">
 </div>
 
+### Camera Video Transfer
+</div>
+Trajectory-Free Camera Control: Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
+<div align=center>
+<br>
+<img width="1148" alt="framework" src="./assets/Camera.GIF">
+</div>
+
+### ID Video Transfer
+</div>
+Dynamic Identity Anchoring: Synthesize consistent personas by distilling cross-temporal and multi-angle ID cues from reference videos.
+<div align=center>
+<br>
+<img width="1148" alt="framework" src="./assets/ID.GIF">
+</div>
+
+### X Transfer
+</div>
+Beyond Observed Boundaries: OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
+<div align=center>
+<br>
+<img width="1148" alt="framework" src="./assets/X.GIF">
+</div>
+
+### OmniTransfer with Seedance 1.0
+</div>
+OmniTransfer now supports Seedance 1.0, enabling the delivery of more intricate and high-impact visual effects.
+<div align=center>
+<br>
+<img width="1148" alt="framework" src="./assets/ID.GIF">
+</div>
 
 ## ⭐ Citation
 
