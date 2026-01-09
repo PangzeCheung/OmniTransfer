@@ -19,7 +19,7 @@ Intelligent Creation Lab, ByteDance
 
 
 ## 📃 Abstract
-Videos convey richer information than images or text, capturing both spatial and temporal dynamics. However, most existing video customization methods rely on reference images or task-specific temporal priors, failing to fully exploit the rich spatio-temporal information inherent in videos, thereby limiting flexibility and generalization in video generation. To address these limitations, we propose OmniTransfer, a unified framework for spatio-temporal video transfer. It leverages multi-view information across frames to enhance appearance consistency and exploits temporal cues to enable fine-grained temporal control. To unify various video transfer tasks, OmniTransfer incorporates three key designs: Task-aware Positional Bias that adaptively leverages reference video information to improve temporal alignment or appearance consistency; Reference-decoupled Causal Learning separating reference and target branches to enable precise reference transfer while improving efficiency; and Task-adaptive Multimodal Alignment using multimodal semantic guidance to dynamically distinguish and tackle different tasks. Extensive experiments show that OmniTransfer outperforms existing methods in appearance (ID and style) and temporal transfer (camera movement and video effects), while matching pose-guided methods in motion transfer without using pose, establishing a new paradigm for flexible, high-fidelity video generation.
+Videos convey richer information than images or text, capturing both spatial and temporal dynamics. However, most existing video customization methods rely on reference images or task-specific temporal priors, failing to fully exploit the rich spatio-temporal information inherent in videos, thereby limiting flexibility and generalization in video generation. To address these limitations, we propose **OmniTransfer**, a unified framework for spatio-temporal video transfer. It leverages multi-view information across frames to enhance appearance consistency and exploits temporal cues to enable fine-grained temporal control. To unify various video transfer tasks, OmniTransfer incorporates three key designs: Task-aware Positional Bias that adaptively leverages reference video information to improve temporal alignment or appearance consistency; Reference-decoupled Causal Learning separating reference and target branches to enable precise reference transfer while improving efficiency; and Task-adaptive Multimodal Alignment using multimodal semantic guidance to dynamically distinguish and tackle different tasks. Extensive experiments show that OmniTransfer outperforms existing methods in **appearance** (**ID** and **style**) and **temporal** transfer (**camera movement** and **video effects**), while matching pose-guided methods in **motion** transfer without using pose, establishing a new paradigm for flexible, high-fidelity video generation.
 
 <!-- <p align="center">
 <img src="assets/teaser.png" width=95%>
@@ -36,7 +36,7 @@ Videos convey richer information than images or text, capturing both spatial and
 
 ### Effect Video Transfer
 </div>
-Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency.
+**Zero-Shot Prompt-Free VFX Mastery:** Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal consistency.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Effect.GIF">
@@ -44,7 +44,7 @@ Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unsee
 
 ### Motion Video Transfer
 </div>
-Pose-Free Animation: Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.consistency.
+**Pose-Free Animation:** Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.consistency.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Motion.GIF">
@@ -52,7 +52,7 @@ Pose-Free Animation: Driven static images by directly injecting fluid, complex m
 
 ### Camera Video Transfer
 </div>
-Trajectory-Free Camera Control: Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
+**Trajectory-Free Camera Control**: Mirror master-class cinematography from unseen clips onto static landscapes without explicit trajectory or parameter estimation.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Camera.GIF">
@@ -60,7 +60,7 @@ Trajectory-Free Camera Control: Mirror master-class cinematography from unseen c
 
 ### ID Video Transfer
 </div>
-Dynamic Identity Anchoring: Synthesize consistent personas by distilling cross-temporal and multi-angle ID cues from reference videos.
+**Dynamic Identity Anchoring:** Synthesize consistent personas by distilling cross-temporal and multi-angle ID cues from reference videos.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/ID.GIF">
@@ -68,7 +68,7 @@ Dynamic Identity Anchoring: Synthesize consistent personas by distilling cross-t
 
 ### X Transfer
 </div>
-Beyond Observed Boundaries: OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
+**Beyond Observed Boundaries:** OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/X.GIF">
@@ -76,7 +76,7 @@ Beyond Observed Boundaries: OmniTransfer generalizes to unprecedented scenarios 
 
 ### OmniTransfer with Seedance 1.0
 </div>
-OmniTransfer now supports Seedance 1.0, enabling the delivery of more intricate and high-impact visual effects.
+**OmniTransfer** now supports **Seedance 1.0**, enabling the delivery of more intricate and high-impact visual effects.
 <div align=center>
 <br>
 <img width="1148" alt="framework" src="./assets/Seedance.GIF">
