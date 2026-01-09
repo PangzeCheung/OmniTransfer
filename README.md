@@ -79,7 +79,7 @@ Beyond Observed Boundaries: OmniTransfer generalizes to unprecedented scenarios 
 OmniTransfer now supports Seedance 1.0, enabling the delivery of more intricate and high-impact visual effects.
 <div align=center>
 <br>
-<img width="1148" alt="framework" src="./assets/ID.GIF">
+<img width="1148" alt="framework" src="./assets/Seedance.GIF">
 </div>
 
 ## ⭐ Citation
