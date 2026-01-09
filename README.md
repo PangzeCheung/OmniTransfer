@@ -59,6 +59,12 @@ Videos convey richer information than images or text, capturing both spatial and
 <img width="1148" alt="framework" src="./assets/ID.GIF">
 </div>
 
+### Style Video Transfer
+**Temporal-Style Distillation:** Generate consistent stylized videos by inheriting cross-frame aesthetic cues from reference clips..
+<div align=center>
+<img width="1148" alt="framework" src="./assets/Style.GIF">
+</div>
+
 ### X Transfer
 **Beyond Observed Boundaries:** OmniTransfer generalizes to unprecedented scenarios from multi-person motion synchronization to unseen task combinations.
 </div>
