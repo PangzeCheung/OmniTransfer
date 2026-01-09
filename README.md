@@ -32,6 +32,24 @@ Videos convey richer information than images or text, capturing both spatial and
 * Jan 7, 2026: We release the [Project Page](https://pangzecheung.github.io/OmniTransfer/) of **OmniTransfer**.
 <!-- and [Technique Report](https://arxiv.org)   -->
 
+## 🎬 Show Case
+
+### Effect Video Transfer
+</div>
+<div align=center>
+<em>Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal. consistency.</em>
+<br>
+<img width="1148" alt="framework" src="./assets/Effect.GIF">
+</div>
+
+### Motion Video Transfer
+</div>
+<div align=center>
+<em>Pose-Free Animation: Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.consistency.</em>
+<br>
+<img width="1148" alt="framework" src="./assets/Motion.GIF">
+</div>
+
 
 ## ⭐ Citation
 
