@@ -36,16 +36,16 @@ Videos convey richer information than images or text, capturing both spatial and
 
 ### Effect Video Transfer
 </div>
+Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal. consistency.
 <div align=center>
-<em>Zero-Shot Prompt-Free VFX Mastery: Replicate intricate visual effects from unseen videos directly onto your images with seamless temporal. consistency.</em>
 <br>
 <img width="1148" alt="framework" src="./assets/Effect.GIF">
 </div>
 
 ### Motion Video Transfer
 </div>
+Pose-Free Animation: Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.consistency.
 <div align=center>
-<em>Pose-Free Animation: Driven static images by directly injecting fluid, complex motion from unseen sources without explicit pose extraction.consistency.</em>
 <br>
 <img width="1148" alt="framework" src="./assets/Motion.GIF">
 </div>
