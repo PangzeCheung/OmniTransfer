@@ -1,7 +1,7 @@
 <div align="center">
 <h1> OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer </h1>
 
-<a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv%20paper-XXXX.XXXXX-b31b1b.svg"></a>
+<a href="https://arxiv.org/abs/2601.14250"><img src="https://img.shields.io/badge/arXiv%20paper-2601.14250-b31b1b.svg"></a>
 <a href="https://pangzecheung.github.io/OmniTransfer/"><img src="https://img.shields.io/badge/Project_page-More_visualizations-green"></a>
 
 [Pengze Zhang](https://pangzecheung.github.io/Homepage/), [Yanze Wu](https://tothebeginning.github.io/)<sup> * </sup>, [Mengtian Li](https://scholar.google.com/citations?user=y8OBcb8AAAAJ), [Xu Bai](https://openreview.net/profile?id=~Baixu1), [Songtao Zhao](https://openreview.net/profile?id=~Songtao_Zhao1)<sup>&dagger; </sup>, <br>[Fulong Ye](https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en), [Chong Mou](https://scholar.google.com/citations?user=SYQoDk0AAAAJ&hl=zh-CN), [Xinghui Li](https://crayon-shinchan.github.io/xinghui99.github.io/), [Zhuowei Chen](https://scholar.google.com/citations?user=ow1jGJkAAAAJ), [Qian He](https://scholar.google.com/citations?user=9rWWCgUAAAAJ), [Mingyuan Gao](https://openreview.net/profile?id=~Mingyuan_Gao2)<br>
@@ -91,7 +91,7 @@ Videos convey richer information than images or text, capturing both spatial and
 
 If OmniTransfer is helpful, please help to ⭐ the repo.
 
-If you find this project useful for your research, please consider citing our [paper](https://arxiv.org/).
+If you find this project useful for your research, please consider citing our [paper](https://arxiv.org/abs/2601.14250).
 
 ### BibTeX
 ```bibtex
@@ -99,10 +99,10 @@ If you find this project useful for your research, please consider citing our [p
 title={OmniTransfer: OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer}, 
 author={Pengze Zhang, Yanze Wu, Mengtian Li, Xu Bai, Songtao Zhao, Fulong Ye, Chong Mou, Xinghui Li, Zhuowei Chen, Qian He and Mingyuan Gao},
 year={2026},
-eprint={XXXX.XXXX},
+eprint={2601.14250},
 archivePrefix={arXiv},
 primaryClass={cs.CV},
-url={https://arxiv.org/abs/XXXX.XXXX}, 
+url={https://arxiv.org/abs/2601.14250}, 
 }
 ```
 
