@@ -96,7 +96,7 @@ If you find this project useful for your research, please consider citing our [p
 ### BibTeX
 ```bibtex
 @misc{zhang2026omnitransfer,
-title={OmniTransfer: OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer}, 
+title={OmniTransfer: All-in-one Framework for Spatio-temporal Video Transfer}, 
 author={Pengze Zhang, Yanze Wu, Mengtian Li, Xu Bai, Songtao Zhao, Fulong Ye, Chong Mou, Xinghui Li, Zhuowei Chen, Qian He and Mingyuan Gao},
 year={2026},
 eprint={2601.14250},
