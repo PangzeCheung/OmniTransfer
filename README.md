@@ -87,6 +87,29 @@ Videos convey richer information than images or text, capturing both spatial and
 <img width="1148" alt="framework" src="./assets/Seedance.GIF">
 </div>
 
+## 🪄 Framework
+<p align="center">
+<img src="assets/architecture.png" width=100%>
+<p>
+<br>
+<em>OmniTransfer comprises three key components: 1) Task-aware Positional Bias: exploits the model's inherent spatial and temporal context capabilities for diverse tasks. 2) Reference-decoupled Causal Learning: separates reference and target branches for causal and efficient transfer. 3) Task-adaptive Multimodal Alignment: leverages an MLLM to unify and enhance semantic understanding across tasks.</em>
+</div>
+
+## 👍 Other Remarkable Video Works
+We also invite you to explore our other awesome video works:
+
+### Video Style Transfer
+DreamStyle: A Unified Framework for Video Stylization. [[Project Page]](https://lemonsky1995.github.io/dreamstyle/) [[paper]](https://arxiv.org/abs/2601.02785)
+
+### Video Face Swapping
+DreamID-V: Bridging the Image-to-Video Gap for High-Fidelity Face Swapping via Diffusion Transformer. [[Project Page]](https://guoxu1233.github.io/DreamID-V/) [[paper]](https://arxiv.org/abs/2601.01425)
+
+### Video Insertion
+OmniInsert: Mask-Free Video Insertion of Any Reference via Diffusion Transformer Models. [[Project Page]](https://phantom-video.github.io/OmniInsert/) [[paper]](https://arxiv.org/abs/2509.17627)
+
+### Video Edit
+InstructX: Towards Unified Visual Editing With MLLM Guidance. [[Project Page]](https://mc-e.github.io/project/InstructX/) [[paper]](https://arxiv.org/pdf/2510.08485)
+
 ## ⭐ Citation
 
 If OmniTransfer is helpful, please help to ⭐ the repo.
