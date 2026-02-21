@@ -4,9 +4,10 @@
 <a href="https://arxiv.org/abs/2601.14250"><img src="https://img.shields.io/badge/arXiv%20paper-2601.14250-b31b1b.svg"></a>
 <a href="https://pangzecheung.github.io/OmniTransfer/"><img src="https://img.shields.io/badge/Project_page-More_visualizations-green"></a>
 
+[Pengze Zhang](https://pangzecheung.github.io/Homepage/), [Yanze Wu](https://tothebeginning.github.io/)<sup> * </sup>, [Mengtian Li](https://scholar.google.com/citations?user=y8OBcb8AAAAJ), [Xu Bai](https://openreview.net/profile?id=~Baixu1), [Songtao Zhao](https://openreview.net/profile?id=~Songtao_Zhao1)<sup>&dagger; </sup>, <br>[Fulong Ye](https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en), [Chong Mou](https://scholar.google.com/citations?user=SYQoDk0AAAAJ&hl=zh-CN), [Xinghui Li](https://crayon-shinchan.github.io/xinghui99.github.io/), [Zhuowei Chen](https://scholar.google.com/citations?user=ow1jGJkAAAAJ), [Qian He](https://scholar.google.com/citations?user=9rWWCgUAAAAJ), [Mingyuan Gao](https://openreview.net/profile?id=~Mingyuan_Gao2)<br>
+
 Accepted by CVPR 2026
 
-[Pengze Zhang](https://pangzecheung.github.io/Homepage/), [Yanze Wu](https://tothebeginning.github.io/)<sup> * </sup>, [Mengtian Li](https://scholar.google.com/citations?user=y8OBcb8AAAAJ), [Xu Bai](https://openreview.net/profile?id=~Baixu1), [Songtao Zhao](https://openreview.net/profile?id=~Songtao_Zhao1)<sup>&dagger; </sup>, <br>[Fulong Ye](https://scholar.google.com/citations?user=-BbQ5VgAAAAJ&hl=en), [Chong Mou](https://scholar.google.com/citations?user=SYQoDk0AAAAJ&hl=zh-CN), [Xinghui Li](https://crayon-shinchan.github.io/xinghui99.github.io/), [Zhuowei Chen](https://scholar.google.com/citations?user=ow1jGJkAAAAJ), [Qian He](https://scholar.google.com/citations?user=9rWWCgUAAAAJ), [Mingyuan Gao](https://openreview.net/profile?id=~Mingyuan_Gao2)<br>
 <sup> * </sup>Corresponding author, <sup> &dagger; </sup>Project leader 
 
 
